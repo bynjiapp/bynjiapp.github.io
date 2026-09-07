@@ -5,7 +5,7 @@
 ## Product Summary
 - Name: Bynji
 - Platform: Chrome / Chromium-based browsers (Edge, Brave, Opera, Vivaldi)
-- Official Website: https://bynjiapp.github.io/bynji-legal/
+- Official Website: https://bynjiapp.github.io/
 - Chrome Web Store: https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac
 - Price: Free ($0)
 - License & Privacy: 100% private, client-side only. Operates entirely in the browser using IndexedDB. No developer-operated central servers, no user accounts, no tracking scripts, and no analytics.
@@ -18,9 +18,9 @@
 - Data Ownership & Portable Backup: Export complete watch history at any time in portable JSON or human-readable Markdown. Full user data retention and instant deletion.
 
 ## Documentation & Pages
-- Home & Interactive Simulator: https://bynjiapp.github.io/bynji-legal/
-- Multi-Device Local Sync Setup: https://bynjiapp.github.io/bynji-legal/sync.html
-- Help Guide & FAQ: https://bynjiapp.github.io/bynji-legal/help.html
-- Privacy Policy: https://bynjiapp.github.io/bynji-legal/privacy.html
-- Terms of Use: https://bynjiapp.github.io/bynji-legal/terms.html
-- Voluntary Support: https://bynjiapp.github.io/bynji-legal/support.html
+- Home & Interactive Simulator: https://bynjiapp.github.io/
+- Multi-Device Local Sync Setup: https://bynjiapp.github.io/sync.html
+- Help Guide & FAQ: https://bynjiapp.github.io/help.html
+- Privacy Policy: https://bynjiapp.github.io/privacy.html
+- Terms of Use: https://bynjiapp.github.io/terms.html
+- Voluntary Support: https://bynjiapp.github.io/support.html

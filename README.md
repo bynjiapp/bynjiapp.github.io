@@ -25,12 +25,12 @@ their Library under their control.
 ## Pages
 
 - Chrome Web Store: https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac
-- Home: https://bynjiapp.github.io/bynji-legal/
-- Local Sync: https://bynjiapp.github.io/bynji-legal/sync.html
-- Help: https://bynjiapp.github.io/bynji-legal/help.html
-- Privacy Policy: https://bynjiapp.github.io/bynji-legal/privacy.html
-- Terms: https://bynjiapp.github.io/bynji-legal/terms.html
-- Support: https://bynjiapp.github.io/bynji-legal/support.html
+- Home: https://bynjiapp.github.io/
+- Local Sync: https://bynjiapp.github.io/sync.html
+- Help: https://bynjiapp.github.io/help.html
+- Privacy Policy: https://bynjiapp.github.io/privacy.html
+- Terms: https://bynjiapp.github.io/terms.html
+- Support: https://bynjiapp.github.io/support.html
 
 ## Support Bynji
 
