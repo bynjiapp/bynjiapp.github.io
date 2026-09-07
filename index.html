@@ -6,8 +6,9 @@
     <meta name="theme-color" content="#06111e" />
     <meta
       name="description"
-      content="Bynji privately remembers your video progress and viewing history across the web. Local-first. No ads."
+      content="Bynji privately remembers video progress and viewing history across the web. Automatically resume web videos. 100% local-first, zero ads, no accounts."
     />
+    <link rel="canonical" href="https://bynjiapp.github.io/bynji-legal/" />
     <meta property="og:title" content="Bynji · Never lose your place" />
     <meta
       property="og:description"
@@ -39,41 +40,82 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Bynji",
-        "headline": "Never lose your place on web video players",
-        "description": "Private, local-first browser extension that remembers video progress and viewing history across the web. No ads, no accounts, no cloud servers.",
-        "applicationCategory": "ProductivityApplication",
-        "operatingSystem": "Windows, macOS, Linux, ChromeOS",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "installUrl": "https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac",
-        "url": "https://bynjiapp.github.io/bynji-legal/",
-        "image": "https://bynjiapp.github.io/bynji-legal/assets/bynji-brand-banner.png",
-        "screenshot": [
-          "https://bynjiapp.github.io/bynji-legal/assets/library.png",
-          "https://bynjiapp.github.io/bynji-legal/assets/popup-resume-context.png",
-          "https://bynjiapp.github.io/bynji-legal/assets/insights.png"
-        ],
-        "featureList": [
-          "Automatic video progress tracking",
-          "Confirmed Resume positions across web players",
-          "Continue Watching shelf",
-          "Organized personal video Library",
-          "Watch Later queue",
-          "On-device viewing Insights and Year in Review",
-          "Optional multi-device local folder sync without cloud accounts",
-          "Multi-viewer profiles with avatars",
-          "Zero telemetry, zero ads, 100% on-device storage"
-        ],
-        "author": {
-          "@type": "Organization",
-          "name": "Bynji",
-          "url": "https://bynjiapp.github.io/bynji-legal/"
-        }
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Bynji",
+            "headline": "Never lose your place on web video players",
+            "description": "Private, local-first browser extension that remembers video progress and viewing history across the web. No ads, no accounts, no cloud servers.",
+            "applicationCategory": "ProductivityApplication",
+            "operatingSystem": "Windows, macOS, Linux, ChromeOS",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "installUrl": "https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac",
+            "url": "https://bynjiapp.github.io/bynji-legal/",
+            "image": "https://bynjiapp.github.io/bynji-legal/assets/bynji-brand-banner.png",
+            "screenshot": [
+              "https://bynjiapp.github.io/bynji-legal/assets/library.png",
+              "https://bynjiapp.github.io/bynji-legal/assets/popup-resume-context.png",
+              "https://bynjiapp.github.io/bynji-legal/assets/insights.png"
+            ],
+            "featureList": [
+              "Automatic video progress tracking",
+              "Confirmed Resume positions across web players",
+              "Continue Watching shelf",
+              "Organized personal video Library",
+              "Watch Later queue",
+              "On-device viewing Insights and Year in Review",
+              "Optional multi-device local folder sync without cloud accounts",
+              "Multi-viewer profiles with avatars",
+              "Zero telemetry, zero ads, 100% on-device storage"
+            ],
+            "author": {
+              "@type": "Organization",
+              "name": "Bynji",
+              "url": "https://bynjiapp.github.io/bynji-legal/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does Bynji resume videos on websites that don't save progress?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bynji runs locally in your browser to observe HTML5 video players and iframe embeds. It automatically saves confirmed playback timestamps to your browser's private database and shows an instant one-click Resume prompt when you revisit the video."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I sync my video watch history across multiple computers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Through Bynji's optional Local Sync, you choose a local folder on your computer. You can synchronize that folder across devices using your own Syncthing, Dropbox, Google Drive, OneDrive, or local network share without third-party accounts or central servers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Bynji track my browsing history or collect analytics?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Bynji is 100% private, offline-first, and local-only. All watch history, progress timestamps, and viewer profiles remain on your device. There is zero telemetry, no central servers, and no advertising."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which video platforms and browsers are supported?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Bynji is available for Google Chrome and Chromium-based browsers including Microsoft Edge, Brave, Opera, and Vivaldi. It works across standard web video players, streaming services, anime platforms, and iframe video embeds."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>

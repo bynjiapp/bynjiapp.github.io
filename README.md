@@ -50,7 +50,8 @@ If Bynji makes watching a little easier, you can support its independent develop
 - `simulator.js` — interactive client-side product demo and simulator
 - `assets/` — approved Bynji artwork and product screenshots
 - `.nojekyll` — serves the site directly through GitHub Pages without Jekyll processing
-- `robots.txt` and `sitemap.xml` — basic search-engine discovery for the public pages
+- `robots.txt` and `sitemap.xml` — search-engine discovery for the public pages
+- `llms.txt` — structured AI agent and LLM search discovery file
 
 ## Purpose
 

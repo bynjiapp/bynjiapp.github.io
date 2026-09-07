@@ -8,7 +8,8 @@
       name="description"
       content="Learn how to set up Bynji, save video progress, use Resume, and manage your private viewing history."
     />
-    <title>Help · Bynji</title>
+    <link rel="canonical" href="https://bynjiapp.github.io/bynji-legal/help.html" />
+    <title>Help &amp; FAQ · Bynji</title>
     <link
       rel="icon"
       type="image/png"
@@ -23,6 +24,70 @@
     />
     <script src="theme.js?v=20260831-2"></script>
     <link rel="stylesheet" href="site.css?v=20260831-2" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is my history stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inside Bynji's local browser database on your device until you delete or export it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Bynji have an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The public extension has no Bynji account or developer-operated cloud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I resume web videos without an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bynji saves playback progress locally in your browser and displays a Resume prompt whenever you revisit a video. No account, login, or cloud connection is ever required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Bynji sync between computers without a central server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Through optional Local Sync, Bynji connects directly to a folder on your computer using standard browser-native folder access. Pair it with your own Syncthing, Dropbox, Drive, or local NAS to synchronize across all your devices under your own control."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Bynji free and ad-free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Bynji is completely free, has zero advertising, no sponsored recommendations, and no remote telemetry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I back up my Library?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Export JSON in Settings for a portable backup, or TXT/Markdown for a readable copy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Bynji track every page I visit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It observes pages to identify active video playback and saves qualified media activity."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

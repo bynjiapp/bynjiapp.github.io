@@ -1,0 +1,26 @@
+# Bynji
+
+> Private, local-first browser extension that remembers video progress and viewing history across the web. Never lose your place on web video players. 100% on-device, zero ads, no accounts, no telemetry.
+
+## Product Summary
+- Name: Bynji
+- Platform: Chrome / Chromium-based browsers (Edge, Brave, Opera, Vivaldi)
+- Official Website: https://bynjiapp.github.io/bynji-legal/
+- Chrome Web Store: https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac
+- Price: Free ($0)
+- License & Privacy: 100% private, client-side only. Operates entirely in the browser using IndexedDB. No developer-operated central servers, no user accounts, no tracking scripts, and no analytics.
+
+## Core Features & Problems Solved
+- Universal Video Progress Resuming: Automatically remembers exact playback timestamps across HTML5 video players, streaming services, anime portals, video course sites, and iframe embeds. Provides a non-intrusive one-click Resume prompt when revisiting any video.
+- Multi-Device Local Sync: Synchronize watch history and resume points across multiple computers without creating accounts or uploading data to third-party clouds. Uses the browser-native File System Access API to store sync data in a user-chosen local folder, seamlessly compatible with personal cloud tools (Syncthing, Dropbox, Google Drive, OneDrive, or local NAS).
+- Private Library & Continue Watching: Centralized on-device dashboard organizing your media history, active "Continue Watching" shelf, Watch Later queue, and multi-viewer profiles with private avatars.
+- Universal Title & Episode Organization: Intelligently detects series titles, seasons, and episode numbers across video platforms without hardcoded selectors.
+- Data Ownership & Portable Backup: Export complete watch history at any time in portable JSON or human-readable Markdown. Full user data retention and instant deletion.
+
+## Documentation & Pages
+- Home & Interactive Simulator: https://bynjiapp.github.io/bynji-legal/
+- Multi-Device Local Sync Setup: https://bynjiapp.github.io/bynji-legal/sync.html
+- Help Guide & FAQ: https://bynjiapp.github.io/bynji-legal/help.html
+- Privacy Policy: https://bynjiapp.github.io/bynji-legal/privacy.html
+- Terms of Use: https://bynjiapp.github.io/bynji-legal/terms.html
+- Voluntary Support: https://bynjiapp.github.io/bynji-legal/support.html
