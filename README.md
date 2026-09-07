@@ -1,5 +1,6 @@
 # Bynji Public Website
 
+![Bynji in action — Resume, Library, Trail, and Insights](assets/bynji-promo.gif)
 ![Bynji — Private video progress. Local-first. No ads.](assets/bynji-brand-banner.png)
 
 Static public website and legal pages for **Bynji**.
