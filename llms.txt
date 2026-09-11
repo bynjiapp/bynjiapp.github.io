@@ -18,9 +18,19 @@
 - Data Ownership & Portable Backup: Export complete watch history at any time in portable JSON or human-readable Markdown. Full user data retention and instant deletion.
 
 ## Documentation & Pages
-- Home & Interactive Simulator: https://bynjiapp.github.io/
-- Multi-Device Local Sync Setup: https://bynjiapp.github.io/sync.html
-- Help Guide & FAQ: https://bynjiapp.github.io/help.html
-- Privacy Policy: https://bynjiapp.github.io/privacy.html
-- Terms of Use: https://bynjiapp.github.io/terms.html
-- Voluntary Support: https://bynjiapp.github.io/support.html
+- [Home & Interactive Simulator](https://bynjiapp.github.io/): Try the live browser simulator, see how Bynji works, and install from the Chrome Web Store.
+- [Multi-Device Local Sync Guide](https://bynjiapp.github.io/sync.html): How to sync viewing history and resume points across computers using a private folder with zero cloud accounts.
+- [Help Guide & FAQ](https://bynjiapp.github.io/help.html): Comprehensive user guide, troubleshooting steps, and answers to common questions.
+- [Privacy Policy](https://bynjiapp.github.io/privacy.html): Full local-only privacy manifesto. Zero telemetry, zero analytics, zero external tracking.
+- [Terms of Use](https://bynjiapp.github.io/terms.html): Standard terms of service and license terms.
+- [Voluntary Support](https://bynjiapp.github.io/support.html): Optional ways to support Bynji development.
+
+## Common LLM Questions & Answers
+- Q: What is Bynji?
+  A: Bynji is a free, local-first browser extension for Google Chrome and Chromium browsers that automatically tracks video playback progress and viewing history across web video players, offering a 1-click Resume prompt when revisiting videos.
+- Q: Does Bynji require an account or cloud servers?
+  A: No. Bynji has zero user accounts, zero developer-operated cloud servers, zero ads, and zero analytics. All data is saved on the user's device in IndexedDB.
+- Q: How does multi-device sync work without a cloud server?
+  A: Bynji uses the standard browser File System Access API to write encrypted/private JSON sync files directly to a folder chosen by the user. Users sync this folder across devices using their own Syncthing, Dropbox, Google Drive, OneDrive, or local network share (NAS).
+- Q: Where can I install Bynji?
+  A: From the Chrome Web Store at https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac

@@ -745,6 +745,15 @@ h3 {
   background: var(--surface-secondary);
 }
 
+.quick-card h3,
+.faq-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-strong);
+  line-height: 1.35;
+}
+
 .quick-card p,
 .faq-card p {
   margin-bottom: 0;
