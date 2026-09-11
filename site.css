@@ -326,6 +326,77 @@ h3 {
   opacity: 0.88;
 }
 
+.button--firefox {
+  border-color: color-mix(in srgb, #ff7139 35%, var(--border));
+  background: color-mix(in srgb, #ff7139 12%, var(--surface));
+  color: var(--text-strong);
+}
+
+.button--firefox:hover {
+  border-color: #ff7139;
+  background: color-mix(in srgb, #ff7139 20%, var(--surface-hover));
+  color: var(--text-strong);
+}
+
+.button-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 8px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.browser-support-strip {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.browser-support-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.browser-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+
+.browser-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.browser-badge:hover {
+  border-color: var(--accent);
+  background: var(--surface-hover);
+  transform: translateY(-1px);
+}
+
+.browser-badge img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .hero-points {
   display: flex;
   flex-wrap: wrap;

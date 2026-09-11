@@ -25,6 +25,7 @@ their Library under their control.
 ## Pages
 
 - Chrome Web Store: https://chromewebstore.google.com/detail/bynji/bficoegaabaomkpamgkogghmghdmhdac
+- Firefox Add-ons: https://addons.mozilla.org/firefox/addon/bynji/
 - Home: https://bynjiapp.github.io/
 - Local Sync: https://bynjiapp.github.io/sync.html
 - Help: https://bynjiapp.github.io/help.html
