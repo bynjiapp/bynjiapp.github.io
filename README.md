@@ -20,7 +20,7 @@ their Library under their control.
 - Human-readable and portable exports
 - No ads, accounts, or developer-operated analytics
 
-![Bynji in action — Resume, Library, Trail, and Insights](assets/bynji-promo.gif)
+![Bynji in action — Resume, Library, Trail, and Insights](assets/popup-resume-context.png)
 
 ## Pages
 

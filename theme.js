@@ -5,12 +5,27 @@
   try {
     stored = localStorage.getItem(storageKey);
   } catch {
-    // Dark remains the deterministic default when browser storage is unavailable.
+    // Graceful fallback when localStorage is disabled or restricted
   }
-  const initialTheme =
-    stored === "light" || stored === "dark" ? stored : "dark";
 
-  const applyTheme = (theme) => {
+  // Detect OS preference when no explicit choice stored
+  const prefersLight =
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: light)").matches;
+
+  const initialTheme =
+    stored === "light" || stored === "dark"
+      ? stored
+      : prefersLight
+        ? "light"
+        : "dark";
+
+  const applyTheme = (theme, animate = false) => {
+    if (animate) {
+      root.classList.add("theme-transitioning");
+      setTimeout(() => root.classList.remove("theme-transitioning"), 300);
+    }
     root.dataset.theme = theme;
     root.style.colorScheme = theme;
     document
@@ -26,23 +41,38 @@
 
   applyTheme(initialTheme);
 
+  // Listen to OS theme changes if user hasn't explicitly set one
+  if (typeof window !== "undefined" && window.matchMedia) {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: light)");
+    mediaQuery.addEventListener?.("change", (e) => {
+      let currentStored = null;
+      try {
+        currentStored = localStorage.getItem(storageKey);
+      } catch (_) {}
+      if (!currentStored) {
+        applyTheme(e.matches ? "light" : "dark", true);
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".site-header");
     if (!header) return;
-    const toggle = document.createElement("button");
-    toggle.type = "button";
-    toggle.className = "theme-toggle";
-    toggle.dataset.themeToggle = "true";
+    let toggle = header.querySelector("[data-theme-toggle]");
+    if (!toggle) {
+      toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "theme-toggle";
+      toggle.dataset.themeToggle = "true";
+      header.append(toggle);
+    }
     toggle.addEventListener("click", () => {
       const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
       try {
         localStorage.setItem(storageKey, nextTheme);
-      } catch {
-        // The current page can still change theme when persistence is unavailable.
-      }
-      applyTheme(nextTheme);
+      } catch (_) {}
+      applyTheme(nextTheme, true);
     });
-    header.append(toggle);
     applyTheme(root.dataset.theme || initialTheme);
   });
 })();
